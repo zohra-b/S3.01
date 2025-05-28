@@ -13,6 +13,6 @@ public class SpanishContactDetailsFactory implements ContactDetailsFactory{
 
     @Override
     public PhoneNumber createPhoneNumber(String number) {
-        return new SpanishPhoneNumber();
+        return new SpanishPhoneNumber(number);
     }
 }

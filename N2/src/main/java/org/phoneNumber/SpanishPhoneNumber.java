@@ -4,6 +4,9 @@ public class SpanishPhoneNumber implements PhoneNumber{
     private final String INTCODE = "+34";
     private String number;
 
+    public SpanishPhoneNumber(String number){
+        setPhoneNumber(number);
+    }
     public String getINTCODE() {
         return INTCODE;
     }
@@ -12,7 +15,7 @@ public class SpanishPhoneNumber implements PhoneNumber{
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setPhoneNumber(String number) {
         if (number == null || !number.matches("\\d{9}") ){
             throw new IllegalArgumentException("Spanish phone numbers contain 9 digits");
         }

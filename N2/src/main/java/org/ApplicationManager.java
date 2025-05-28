@@ -40,7 +40,7 @@ public class ApplicationManager {
             PhoneNumber phoneNumber = factory.createPhoneNumber();
 
             System.out.println("Creating contact phone number : Insert contact's phoneNumber");
-            phoneNumber.setNumber(sc.nextLine());
+            phoneNumber.setPhoneNumber(sc.nextLine());
 
             System.out.println("Creating contact address. Insert contact's address");
 

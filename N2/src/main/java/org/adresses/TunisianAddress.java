@@ -36,7 +36,7 @@ public class TunisianAddress implements Address {
 
     public void setCp(String cp) {
         if (cp == null || !cp.matches("\\d{4}")) {
-            throw new IllegalArgumentException("Tunisian postal code contain 5 digits");
+            throw new IllegalArgumentException("Tunisian postal code contain 4 digits");
         }
         this.cp = cp;
     }

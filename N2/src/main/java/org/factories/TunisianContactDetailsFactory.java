@@ -16,6 +16,6 @@ public class TunisianContactDetailsFactory implements ContactDetailsFactory{
 
     @Override
     public PhoneNumber createPhoneNumber(String number) {
-        return new TunisianPhoneNumber();
+        return new TunisianPhoneNumber(number);
     }
 }
